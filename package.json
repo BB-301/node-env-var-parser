@@ -1,0 +1,39 @@
+{
+  "name": "@bb301/env-var-parser",
+  "version": "1.0.0",
+  "author": "BB-301 <fw3dg3@gmail.com> (https://github.com/BB-301)",
+  "description": "A simple Node.js package (written in TypeScript) containing a set of convenience functions that can be used for retrieving environment variables and casting them into specific types.",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "scripts": {
+    "compile": "./node_modules/.bin/tsc -p ./",
+    "watch": "./node_modules/.bin/tsc -watch -p ./",
+    "test": "npm run compile && node ./out/tests.js",
+    "docs": "./node_modules/.bin/typedoc --out ../node-env-var-parser-docs/docs src/index.ts",
+    "pack": "npm run test && npm pack"
+  },
+  "keywords": [
+    "environment variables",
+    "parser",
+    "util"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/BB-301/node-env-var-parser",
+  "repository": {
+    "url": "https://github.com/BB-301/node-env-var-parser",
+    "type": "git"
+  },
+  "bugs": {
+    "email": "fw3dg3@gmail.com",
+    "url": "https://github.com/BB-301/node-env-var-parser/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "typedoc": "^0.25.8",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "out/index.js",
+    "out/index.d.ts"
+  ]
+}

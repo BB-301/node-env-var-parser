@@ -1,0 +1,11 @@
+**/.DS_Store
+
+/.npmrc
+/.vscode
+
+/*.tgz
+
+/out
+/node_modules
+
+/tmp
